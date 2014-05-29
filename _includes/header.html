@@ -2,13 +2,27 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/">Beyond A Bruin</a>
 
     <nav class="site-nav">
       <div class="trigger">
-        {% for page in site.pages %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endfor %}
+        <!--
+        <ul>
+          <li><a class="page-link" href="/">Home</a></li>
+          <li><a class="page-link" href="/news/">News</a></li>
+          <li><a class="page-link" href="/sports/">Sports</a></li>
+          <li><a class="page-link" href="/columns/">Columns</a></li>
+          <li><a class="page-link" href="/radio/">Radio</a></li>
+          <li><a class="page-link" href="/video/">Video</a></li>
+        </ul>
+        -->
+          <a class="page-link" href="/">Home</a>
+          <a class="page-link" href="/news/">News</a>
+          <a class="page-link" href="/sports/">Sports</a>
+          <a class="page-link" href="/columns/">Columns</a>
+          <a class="page-link" href="/radio/">Radio</a>
+          <a class="page-link" href="/video/">Video</a>
+
       </div>
     </nav>
 
