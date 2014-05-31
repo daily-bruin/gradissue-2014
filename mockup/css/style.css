@@ -1,0 +1,126 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, html {
+  height: 100%;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 70pt;
+  font-weight: 100;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.thick {
+  font-weight: 700;
+  font-size: 90pt;
+}
+
+.h-center-wrap {
+  position: absolute;
+  left: 50%;
+}
+
+.v-center-wrap {
+  position: absolute;
+  top: 30%;
+}
+
+.h-center-wrap * {
+  position: relative;
+  left: -50%;
+}
+
+.v-center-wrap * {
+  position: relative;
+  top: -50%;
+}
+
+.category {
+  font-family: 'Lato', sans-serif;
+  font-size: 20pt;
+  padding: 20px 20px 0 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 50pt;
+  width: 50%;
+  line-height: 1.2;
+  padding: 20px;
+  text-shadow: 0 1px 5px #101010;
+}
+
+.author {
+  font-weight: 400;
+  font-size: 20pt;
+  padding: 0 20px;
+  text-shadow: 0 1px 5px #101010;
+}
+
+#header {
+  background-image: url('../img/header.jpg');
+  text-align: center;
+}
+
+#news {
+  background-image: url('../img/example1.jpg');
+}
