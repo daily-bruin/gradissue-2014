@@ -7,4 +7,4 @@ url: "http://graphics.dailybruin.com/grad2014/"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:categories/:title/

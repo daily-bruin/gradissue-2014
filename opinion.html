@@ -4,16 +4,20 @@ title: Columns
 permalink: /columns/
 ---
 <div class="columns">
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <article>{{ post.content }}</article>
-      </li>
-    {% endfor %}
-  </ul>
-   <ul class="test">
-    <p> THIS IS AN EXAMPLE PARAGRAPH </p>
-  </ul>
+  <div id="page">
+    <div id="content">
+      <div class="mugbar">
+        {% for post in site.categories['columns'] %}
+        <a href="#{{ post.name }}"><img src="image/opinion.{{ post.title }}.jpg" class="thumb"/></a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% for post in site.categories['columns'] %}
+    <div id="{{ post.name }}" class="article">
+      <h3>{{ post.title }}</h3>
+      <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
+      <article>{{ post.content }}</article>
+    </div>
+  {% endfor %}
 </div>
