@@ -8,18 +8,16 @@ permalink: /columns/
     <div id="content">
       <div class="mugbar">
         {% for post in site.categories['columns'] %}
-        <a href="{{ post.name }}"><img src="image/opinion.{{ post.title }}.jpg" class="thumb"/></a>
+        <a href="#{{ post.name }}"><img src="image/opinion.{{ post.title }}.jpg" class="thumb"/></a>
         {% endfor %}
       </div>
     </div>
   </div>
-  <ul class="posts">
-    {% for post in site.categories['columns'] %}
-      <li>
-        <h3>{{ post.title }}</h3>
-        <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
-        <article>{{ post.content }}</article>
-      </li>
-    {% endfor %}
-  </ul>
+  {% for post in site.categories['columns'] %}
+    <div id="{{ post.name }}" class="article">
+      <h3>{{ post.title }}</h3>
+      <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
+      <article>{{ post.content }}</article>
+    </div>
+  {% endfor %}
 </div>
