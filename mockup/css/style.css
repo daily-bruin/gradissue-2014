@@ -124,3 +124,15 @@ h1 {
 #news {
   background-image: url('../img/example1.jpg');
 }
+
+/* ---- media queries */
+
+@media screen and (max-width: 750px) {
+
+  .nav-pills>li {
+      float: none;
+    }
+  .navbar-fixed-top {
+    position: relative !important;
+  }
+}
