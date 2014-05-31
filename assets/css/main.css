@@ -312,6 +312,12 @@ a:visited { color: #205caa; }
     clear: both;
   }
 
+  .nav-pills>li {
+      float: none;
+    }
+  .navbar-fixed-top {
+    position: relative !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
