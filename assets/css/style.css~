@@ -1,0 +1,207 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, html {
+  height: 100%;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 70pt;
+  font-weight: 100;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.thick {
+  font-weight: 700;
+  font-size: 90pt;
+}
+
+.h-center-wrap {
+  position: absolute;
+  left: 50%;
+}
+
+.v-center-wrap {
+  position: absolute;
+  top: 30%;
+}
+
+.h-center-wrap * {
+  position: relative;
+  left: -50%;
+}
+
+.v-center-wrap * {
+  position: relative;
+  top: -50%;
+}
+
+.category {
+  font-family: 'Lato', sans-serif;
+  font-size: 20pt;
+  padding: 20px 20px 0 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 50pt;
+  width: 50%;
+  line-height: 1.2;
+  padding: 20px;
+  text-shadow: 0 1px 5px #101010;
+}
+
+.author {
+  font-weight: 400;
+  font-size: 20pt;
+  padding: 0 20px;
+  text-shadow: 0 1px 5px #101010;
+}
+
+/*****************************************************
+ * generic styling for ALS elements: outer container
+ ******************************************************/
+#demo1{
+	margin: 40px auto;
+}
+
+#demo1 .als-item{
+	margin: 0px 5px;
+	padding: 4px 0px;
+	max-height: 120px;
+	min-width: 100px;
+	text-align: center;
+}
+#demo1 .als-item img{
+	display:block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#demo1 .als-prev, #demo1 .als-next{
+	top: 40px;
+}
+#demo1 .als-prev{
+	left: 2px;
+}
+#demo1 .als-next{
+	left:1600px;
+	
+}
+
+.als-container {
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	z-index: 0;
+}
+
+/****************************************
+ * viewport styling
+ ***************************************/
+
+.als-viewport {
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+/***************************************************
+ * wrapper styling
+ **************************************************/
+
+.als-wrapper {
+	position: relative;
+	/* if you are using a list with <ul> <li> */
+	list-style: none;
+}
+
+/*************************************
+ * item: single list element
+ ************************************/
+
+.als-item {
+	position:relative;
+	display:block;
+	cursor:pointer;
+	float:left;
+	text-align: center;
+}
+
+/***********************************************
+ * prev, next: buttons styling
+ **********************************************/
+ 
+.als-prev, .als-next {
+	position: absolute;
+	cursor: pointer;
+	clear: both;
+}
+
+
+#header {
+  background-image: url('../img/header.jpg');
+  text-align: center;
+}
+
+#news {
+  background-image: url('../img/example1.jpg');
+}
