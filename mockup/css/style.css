@@ -144,7 +144,7 @@ h1 {
 }
 #demo1 .als-next{
 	right:40px;
-	
+
 }
 
 .als-container {
@@ -170,7 +170,7 @@ h1 {
 }
 .navbar .nav > li > a {
 	color:#333333;
-	padding-top:7px !important; 
+	padding-top:7px !important;
 	padding-bottom:7px !important;
 }
 .navbar .nav > li > a:hover {
@@ -215,7 +215,7 @@ h1 {
 /***********************************************
  * prev, next: buttons styling
  **********************************************/
- 
+
 .als-prev, .als-next {
 	position: absolute;
 	cursor: pointer;
@@ -246,6 +246,6 @@ h1 {
 .navbar-fixed-top {
 height: auto !important;
 overflow: visible !important;
-}    
+}
 
 }

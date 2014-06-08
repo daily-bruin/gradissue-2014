@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link href="./assets/css/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/tipsy.css" rel="stylesheet">
 </head>
 <body>
   <div class="wrap">
@@ -54,32 +55,34 @@ to retrieve it easily during ALS inizialization -->
 
 <div class="als-container" id="demo1">
 
-<!-- if you choose manual scrolling (which is set by default), insert <span> with class "als-prev"  and "als-next": 
-they define the buttons "previous" and "next"; within the <span> you can use images or simple text -->	
-  
-  <span class="als-prev"><img src="img/prev.png" alt="prev" title="previous" style="height:100px; width: 100px" /></span>
+<!-- if you choose manual scrolling (which is set by default), insert <span> with class "als-prev"  and "als-next":
+they define the buttons "previous" and "next"; within the <span> you can use images or simple text -->
+
+  <span class="als-prev"><img src="./assets/img/prev.png" alt="prev" title="previous" /></span>
 
 <!-- define a container with class "als-viewport": this will be the viewport for the list visible elements -->
 
   <div class="als-viewport">
-  
-<!-- define a container with class "als-wrapper": this will be the wrapper for the list elements, 
+
+<!-- define a container with class "als-wrapper": this will be the wrapper for the list elements,
 it can be a classic <ul> element or even a <div> element -->
 
     <ul class="als-wrapper">
 
-<!-- define the list elements, each must have class "als-item"; they can be classic <li> elements 
+<!-- define the list elements, each must have class "als-item"; they can be classic <li> elements
 or generic <div> elements and they can contain anything: text, images, ... -->
-
-      <li class="als-item"><img src="img/images.jpg" alt="apple" title="apple" /></li> <!-- image -->
-      <li class="als-item"><img src="img/images (1).jpg" alt="banana" title="banana" />banana</li> <!-- image + text -->
-      <li class="als-item"><img src="img/ucla_03_big.jpg" alt="apple" title="apple" /></li> <!-- image -->
-      <li class="als-item"><img src="img/images.jpg" alt="apple" title="apple" /></li> <!-- image -->
-      <li class="als-item"><img src="img/images.jpg" alt="apple" title="apple" /></li> <!-- image -->
+      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/fashion-beyond-ucla-guide-to-postgrad-style/"><img src="http://dailybruin.com/images/2014/06/1a47f3cd-6252-4bb3-b578-c04ecdde11b2-425x640.jpg" class="tt" title="This is my image's tooltip message!" /></a></li> <!-- image -->
+      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/graduate-student-rocco-pucillo-sells-imaginary-foe-to-warner-bros/"><img src="http://dailybruin.com/images/2014/06/abe03141-3a94-4f94-9e7e-8d9032f5b4ed-426x640.jpg" class="tt" title="This is my image's tooltip message!"/></a></li> <!-- image -->
+      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/qa-musician-naomi-robin-shares-postgrad-plans/"><img src="http://dailybruin.com/images/2014/06/ff85b1e5-a3bd-4b1d-9f35-a5a19fee182d-640x426.jpg" /></a></li> <!-- image -->
+      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/graduate-student-raps-on-current-events-philosophy/"><img src="http://dailybruin.com/images/2014/06/90ae3167-6947-4e1c-b55e-54c33e517d6d-640x426.jpg"/></a></li> <!-- image -->
+      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/bruin-pursues-music-dance-curriculum-with-fulbright-program/"><img src="http://dailybruin.com/images/2014/06/da2f7863-cf9b-4b9e-867f-0f9d777fd534-423x640.jpg"/></a></li> <!-- image -->
+      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/donald-neuen-retires-after-50-years-of-collegiate-conducting/"><img src="http://dailybruin.com/images/2014/06/1012b27e-3f66-4a33-a83b-a2116a278e78-640x425.jpg"/></a></li> <!-- image -->
+      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/screenwriting-student-commissioned-to-write-comedy-pilot/"><img src="http://dailybruin.com/images/2014/06/5af907cb-637d-444a-893d-bb145fc27dda-640x456.jpg"/></a></li> <!-- image -->
+      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/acting-scriptwriting-on-the-horizon-for-ucla-student/"><img src="http://dailybruin.com/images/2014/06/5d8cbf37-281e-4cb8-8bac-9e76d31dc4ee-640x385.jpg"/></a></li> <!-- image -->
 
     </ul> <!-- als-wrapper end -->
   </div> <!-- als-viewport end -->
-  <span class="als-next"><img src="img/download.jpg" alt="next" title="next" style="height:100px; width:100px"/></span> <!-- "next" button -->
+  <span class="als-next"><img src="./assets/img/next.png" alt="next" title="next" /></span> <!-- "next" button -->
 </div> <!-- als-container end -->
   </div>
   <div class="section" id="sports">
@@ -92,16 +95,18 @@ or generic <div> elements and they can contain anything: text, images, ... -->
 <script
   src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./assets/js/smoothscroll.js"></script>
-<script type="text/javascript" src="./assets/js/jquery.alsEN-1.5.js"></script>
+  <script type="text/javascript" src="./assets/js/smoothscroll.js"></script>
+  <script type="text/javascript" src="./assets/js/jquery.alsEN-1.5.js"></script>
+  <script type="text/javascript" src="./assets/js/tipsy/src/javascripts/jquery.tipsy.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$("#demo1").als({
-		visible_items:3,
+		$('.tt').tipsy();
+    $("#demo1").als({
+		visible_items:6,
 		scrolling_items: 2,
 		orientation: "horizontal",
 		circular: "yes",
 		autoscroll: "no"
+	  });
 	});
-	});	
 </script>
