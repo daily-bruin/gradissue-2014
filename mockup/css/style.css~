@@ -126,7 +126,7 @@ h1 {
 #demo1 .als-item{
 	margin: 0px 5px;
 	padding: 4px 0px;
-	min-height: 120px;
+	max-height: 120px;
 	min-width: 100px;
 	text-align: center;
 }
@@ -143,8 +143,8 @@ h1 {
 	left: 2px;
 }
 #demo1 .als-next{
-	right:40px;
-
+	left:1600px;
+	
 }
 
 .als-container {
@@ -153,33 +153,7 @@ h1 {
 	margin: 0px auto;
 	z-index: 0;
 }
-/****************************************
- * navbar styling
- ***************************************/
 
-.navbar-brand {
-  font-family: 'Roboto Slab', serif;
-  color: #0060A0 !important;
-  padding: 7px 8px !important;
-}
-.page-link {
-	font-family: 'Lato', serif;
-}
-.navbar {
-	min-height:30px !important;
-}
-.navbar .nav > li > a {
-	color:#333333;
-	padding-top:7px !important;
-	padding-bottom:7px !important;
-}
-.navbar .nav > li > a:hover {
-	color:#0060A0;
-}
-.navbar-default {
-	background-color: rgba(255,255,255,0.5);
-}
-.navbar-fixed-top {height:35px}
 /****************************************
  * viewport styling
  ***************************************/
@@ -215,7 +189,7 @@ h1 {
 /***********************************************
  * prev, next: buttons styling
  **********************************************/
-
+ 
 .als-prev, .als-next {
 	position: absolute;
 	cursor: pointer;
@@ -230,22 +204,4 @@ h1 {
 
 #news {
   background-image: url('../img/example1.jpg');
-}
-
-/* ---- media queries */
-
-@media screen and (max-width: 750px) {
-
-  .nav-pills>li {
-      float: none;
-    }
-  .navbar-fixed-top {
-    position: relative !important;
-  }
-
-.navbar-fixed-top {
-height: auto !important;
-overflow: visible !important;
-}
-
 }
