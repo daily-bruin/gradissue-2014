@@ -198,13 +198,10 @@ or generic <div> elements and they can contain anything: text, images, ... -->
 
 
 <div class="section" id="opinion">
-    <br/>
-      <h1>-30- Columns</h1>
-      <iframe width="853" height="480" src="//www.youtube.com/embed/v-nN3ENb_HE?rel=0" frameborder="0" allowfullscreen></iframe>
-</div> <!-- end opinion -->
-
-<div class="section" id="opinion-columns">
-  <div id="page">
+      <br/>
+      <h1>Opinion</h1>
+      <br/>
+    <div id="page">
     <div id="content">
       <div class="mugbar">
         {% for post in site.categories['columns'] %}
@@ -235,7 +232,15 @@ or generic <div> elements and they can contain anything: text, images, ... -->
   </div>
 </div>
 {% endfor %}
+    
 </div> <!-- end opinion -->
+
+<!-- start Video -->
+
+<div class="video-container">
+  <iframe src="//www.youtube.com/embed/v-nN3ENb_HE?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+<!-- end video -->
 
 
 <div class="section" id="radio">
