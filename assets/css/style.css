@@ -104,6 +104,7 @@ em {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 10px;
+  text-shadow: 0 1px 5px #101010;
 }
 
 .title {
@@ -433,10 +434,12 @@ overflow: visible !important;
 
 #opinion .thumb {
   width: 100px;
+  opacity: 0.7;
 }
 
 #opinion .thumb:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 .video-container {
