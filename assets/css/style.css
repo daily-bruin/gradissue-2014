@@ -65,6 +65,7 @@ h1 {
   width: 100%;
   background-size: cover;
   padding-top: 40px;
+  position: relative;
 }
 
 .thick {
@@ -157,7 +158,7 @@ h1 {
 }
 
 .als-container {
-  position: relative;
+  position: absolute;
   bottom: 0;
   background-color: rgba(0,0,0,0.7);
   padding: 30px;
