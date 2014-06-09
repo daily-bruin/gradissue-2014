@@ -406,10 +406,12 @@ overflow: visible !important;
 
 #opinion .thumb {
   width: 100px;
+  opacity: 0.7;
 }
 
 #opinion .thumb:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 .video-container {
