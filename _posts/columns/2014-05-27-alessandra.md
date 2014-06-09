@@ -44,4 +44,4 @@ My experience at the university, it seems, started where it would one day end â€
 
 For all the ledes I wrote and read in between, Iâ€™m grateful.
 
-Daskalakis was prime editor from 2013-2014, science and health editor from 2012-2013 and a news contributor and reporter from 2010-2012.
+*Daskalakis was prime editor from 2013-2014, science and health editor from 2012-2013 and a news contributor and reporter from 2010-2012.*
