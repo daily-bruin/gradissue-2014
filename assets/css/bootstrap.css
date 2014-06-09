@@ -2979,10 +2979,10 @@ input[type="button"].btn-block {
 .glyphicon-registration-mark:before {
   content: "\e195";
 }
-.glyphicon-butt-download:before {
+.glyphicon-cloud-download:before {
   content: "\e197";
 }
-.glyphicon-butt-upload:before {
+.glyphicon-cloud-upload:before {
   content: "\e198";
 }
 .glyphicon-tree-conifer:before {

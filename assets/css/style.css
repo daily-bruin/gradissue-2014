@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
-@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -12,7 +12,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, nav, output, ruby, section,opinion, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section,opinion {
   display: block;
 }
 body {
@@ -259,3 +259,71 @@ overflow: visible !important;
 }
 
 }
+
+/***********************************************
+ * Main Opinion Styling
+ **********************************************/
+
+
+#opinion, #opinion-columns{
+  background-color: #2980b9;
+  text-align: center;
+  background-size: cover;
+}
+
+#opinion {
+  height: 100%;
+  width: 100%;
+}
+
+#opinion-columns {
+  height: 50%;
+  width: 100%;
+}
+
+#opinion h1{
+  margin-top: 50px;
+  font-weight: 200;
+}
+
+.mugbar {
+  width:600px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+#opinion p{
+  margin: 10px;
+  font-size: 1.1em;
+  line-height: 1.3;
+  text-align: left;
+  width: 100%;
+  font-family: 'Lato', serif;
+  font-weight: 300;
+  color: #2c3e50;
+}
+.modal-body p:first-of-type:first-letter{ 
+  font-size:300%;
+  color:#2c3e50;
+}
+
+.modal-body em{ 
+  font-style: italic;
+  font-size: .9em;
+  font-family: 'Lato', serif;
+  font-weight: 400;
+  color:#34495e;
+}
+
+#opinion h3{
+  margin: 10px;
+  font-size: 1.5em;
+  font-family: 'Roboto Slab', serif;
+  color: #34495e;
+}
+
+.thumb {
+  width: 71px;
+}
+
