@@ -176,6 +176,14 @@ em {
   margin: -10px 0 10px 0;
 }
 
+.cover-credit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  opacity: .7;
+}
 /* For disabling video container carousel
 #video .als-next, #video .als-prev{
   display: none;

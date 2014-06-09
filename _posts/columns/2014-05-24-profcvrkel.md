@@ -36,4 +36,4 @@ These days I work primarily in bioethics, helping clinicians and scientists figu
 
 I do it because philosophy improves every decision I make, every single day. I do it because I think there’s not much that matters more. 
 
-*Cvrkel is a lecturer of molecular, cell and developmental biology at UCLA.*
+*Dr. Tiffany Cvrkel is a lecturer of molecular, cell and developmental biology at UCLA.*

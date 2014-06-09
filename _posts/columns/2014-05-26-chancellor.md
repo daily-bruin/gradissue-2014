@@ -22,4 +22,4 @@ This commencement season follows the public launch of our Centennial Campaign fo
 
 I hope your graduation will inspire you to do the same: to reflect on the remarkable success of your time at UCLA, to take stock in your own self-reliance and to prepare yourself for a future filled with immense promise.
 
-*Block is the chancellor of UCLA.*
+*Dr. Gene Block is the chancellor of UCLA.*
