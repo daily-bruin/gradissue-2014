@@ -64,6 +64,8 @@ h1 {
   height: 100%;
   width: 100%;
   background-size: cover;
+  padding-top: 40px;
+  position: relative;
 }
 
 .thick {
@@ -116,6 +118,12 @@ h1 {
   text-shadow: 0 1px 5px #101010;
 }
 
+.tipsy {
+  font-family: 'Lato', sans-serif;
+  font-size: 10pt;
+  line-height: 20px;
+}
+
 /*****************************************************
  * generic styling for ALS elements: outer container
  ******************************************************/
@@ -140,7 +148,7 @@ h1 {
   top: 40px;
 }
 #demo1 .als-prev, #demo2 .als-prev,#demo3 .als-prev, #demo4 .als-prev, #demo5 .als-prev, #demo6 .als-prev, #demo7 .als-prev{
-	top: 40px;  
+	top: 40px;
 	left: 2px;
 }
 #demo1 .als-next, #demo2 .als-next,#demo3 .als-next, #demo4 .als-next,#demo5 .als-next, #demo6 .als-next, #demo7 .als-next{
@@ -150,12 +158,19 @@ h1 {
 }
 
 .als-container {
-  position: relative;
-  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
   padding: 30px;
   width: 100%;
   margin: 0px auto;
 }
+
+.als-container h4 {
+  text-align: center;
+  margin: -10px 0 10px 0;
+}
+
 /****************************************
  * navbar styling
  ***************************************/
@@ -180,7 +195,7 @@ h1 {
   color:#0060A0;
 }
 .navbar-default {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgb(255,255,255);
 }
 .navbar-fixed-top {height:35px}
 /****************************************
@@ -238,8 +253,26 @@ h1 {
   text-align: center;
 }
 
+#header img {
+  width: 250px;
+  opacity: 0.7;
+}
+
+#header h3 {
+  margin: 5px;
+  opacity: 0.7;
+}
+
 #news {
   background-image: url('../img/example1.jpg');
+}
+
+#sports {
+  background-image: url('../img/covers/sportscover.jpg');
+}
+
+#a-e {
+  background-image: url('../img/covers/aecover.jpg');
 }
 
 /* ---- media queries */
