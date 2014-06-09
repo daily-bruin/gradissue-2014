@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,400italic);
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,6 +60,10 @@ h1 {
   font-weight: 100;
 }
 
+em {
+  font-style: italic;
+}
+
 .section {
   height: 100%;
   width: 100%;
@@ -104,7 +108,7 @@ h1 {
 
 .title {
   font-weight: 700;
-  font-size: 50pt;
+  font-size: 60pt;
   width: 50%;
   line-height: 1.2;
   padding: 20px;
@@ -267,6 +271,40 @@ h1 {
   background-image: url('../img/example1.jpg');
 }
 
+#editor {
+  background-color: #2c3e50;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+#editor h2 {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+#editor h4 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#editor p {
+  line-height: 1.6;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#editor .two-col {
+  -moz-column-count: 2;
+  -moz-column-gap: 40px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  width: 800px;
+  margin: 0 auto;
+}
+
 #sports {
   background-image: url('../img/covers/sportscover.jpg');
 }
@@ -315,12 +353,21 @@ overflow: visible !important;
 }
 
 #opinion h1{
-  margin-top: 50px;
-  font-weight: 200;
+  margin: 10px 0 20px 0;
+  font-weight: 100;
+}
+
+#opinion h4 {
+  width: 750px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  font-weight: 4  00;
+  line-height: 1.6;
 }
 
 #opinion .mugbar {
-  width:600px;
+  width:750px;
   position: relative;
   margin: auto;
   margin-bottom: 70px;
@@ -336,12 +383,12 @@ overflow: visible !important;
   font-weight: 300;
   color: #2c3e50;
 }
-#opinion .modal-body p:first-of-type:first-letter{ 
+#opinion .modal-body p:first-of-type:first-letter{
   font-size:300%;
   color:#2c3e50;
 }
 
-#opinion .modal-body em{ 
+#opinion .modal-body em{
   font-style: italic;
   font-size: .9em;
   font-family: 'Lato', serif;
@@ -357,7 +404,11 @@ overflow: visible !important;
 }
 
 #opinion .thumb {
-  width: 71px;
+  width: 100px;
+}
+
+#opinion .thumb:hover {
+  cursor: pointer;
 }
 
 .video-container {
@@ -365,7 +416,7 @@ overflow: visible !important;
     padding-bottom: 56.25%;
     padding-top: 30px; height: 0; overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -375,4 +426,3 @@ overflow: visible !important;
     width: 100%;
     height: 100%;
 }
-
