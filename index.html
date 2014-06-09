@@ -198,23 +198,46 @@ or generic <div> elements and they can contain anything: text, images, ... -->
 
 
 <div class="section" id="opinion">
+    <br/>
+      <h1>-30- Columns</h1>
+      <iframe width="853" height="480" src="//www.youtube.com/embed/v-nN3ENb_HE?rel=0" frameborder="0" allowfullscreen></iframe>
+</div> <!-- end opinion -->
+
+<div class="section" id="opinion-columns">
   <div id="page">
     <div id="content">
       <div class="mugbar">
         {% for post in site.categories['columns'] %}
-        <a href="#{{ post.name }}"><img src="../assets/img/mugs/{{ post.name }}.jpg" class="thumb"/></a>
+          <!-- Button trigger modal -->
+          <a data-toggle="modal" data-target="#{{ post.name }}">
+            <img src="../assets/img/mugs/{{ post.name }}.jpg" class="thumb"/>
+          </a>
         {% endfor %}
       </div>
+    </br>
     </div>
   </div>
-  {% for post in site.categories['columns'] %}
-    <div id="{{ post.name }}" class="article">
-      <h3>{{ post.title }}</h3>
-      <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
-      <article>{{ post.content }}</article>
+
+<!-- Modal -->
+{% for post in site.categories['columns'] %}
+<div class="modal fade" id="{{ post.name }}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title" id="myModalLabel">{{ post.title }}</h3>
+      </div>
+      <div class="modal-body">
+        <p>{{ post.content }}<p>
+      </div>
+      <div class="modal-footer"></div>
     </div>
-  {% endfor %}
+  </div>
+</div>
+{% endfor %}
 </div> <!-- end opinion -->
+
+
 <div class="section" id="radio">
     <div class="category">Radio</div>
     <h3 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
