@@ -175,6 +175,25 @@ em {
   margin: -10px 0 10px 0;
 }
 
+/* For disabling video container carousel
+#video .als-next, #video .als-prev{
+  display: none;
+}
+
+#video ul {
+  text-align: center;
+}
+
+#video ul li {
+  float: none;
+  display: inline-block;
+}
+
+#video .als-item {
+  display: inline-block;
+}
+*/
+
 /****************************************
  * navbar styling
  ***************************************/
@@ -291,7 +310,7 @@ em {
 
 #editor p {
   line-height: 1.6;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -311,6 +330,15 @@ em {
 
 #a-e {
   background-image: url('../img/covers/aecover.jpg');
+}
+
+#video {
+  background-image: url('../img/covers/videocover.jpg');
+}
+
+#pdf-link {
+  position: absolute;
+  right: 0;
 }
 
 /* ---- media queries */

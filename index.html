@@ -22,7 +22,7 @@ layout: default
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Beyond a Bruin</a>
+      <a class="smoothScroll navbar-brand" href="#">Beyond a Bruin</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -32,9 +32,9 @@ layout: default
             <li><a class="page-link smoothScroll" href="#sports">Sports</a></li>
             <li><a class="page-link smoothScroll" href="#a-e">A&E</a></li>
             <li><a class="page-link smoothScroll" href="#opinion">Opinion</a></li>
-            <li><a class="page-link smoothScroll" href="#radio">Radio</a></li>
-            <li><a class="page-link smoothScroll" href="#video">Video</a></li>
+            <li><a class="page-link smoothScroll" href="#video">Multimedia</a></li>
             <li><a class="page-link smoothScroll" href="http://dailybruin.com/features/prime-diy-graduation-cap/" target="_blank">Prime</a></li>
+            <li id="pdf-link"><a class="page-link" href="http://dailybruin.com/images/2014/06/ALL_FINAL.pdf" target="_blank">Print Issue</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -64,8 +64,8 @@ layout: default
     </div>
   </div>
   <div class="section" id="news">
-    <div class="category">News</div>
-    <h3 class="title">Beyond the Jekyll</h3>
+    <div class="category" style="color: black">News</div>
+    <h3 class="title"></h3>
     <!-- define a container with class "als-container": this will be the object binded to ALS; we suggest to give it an ID
 to retrieve it easily during ALS inizialization -->
 
@@ -256,50 +256,10 @@ or generic <div> elements and they can contain anything: text, images, ... -->
 <!-- end video -->
 
 
-<div class="section" id="radio">
-    <div class="category">Radio</div>
-    <h3 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-    <h4 class="author">by Firstname Lastname</h4>
-    <!-- define a container with class "als-container": this will be the object binded to ALS; we suggest to give it an ID
-to retrieve it easily during ALS inizialization -->
-
-<div class="als-container" id="demo5">
-
-
-<!-- if you choose manual scrolling (which is set by default), insert <span> with class "als-prev"  and "als-next":
-they define the buttons "previous" and "next"; within the <span> you can use images or simple text -->
-
-  <span class="als-prev"><img src="./assets/img/prev.png" alt="prev" title="previous" /></span>
-
-<!-- define a container with class "als-viewport": this will be the viewport for the list visible elements -->
-
-  <div class="als-viewport">
-
-<!-- define a container with class "als-wrapper": this will be the wrapper for the list elements,
-it can be a classic <ul> element or even a <div> element -->
-
-    <ul class="als-wrapper">
-
-<!-- define the list elements, each must have class "als-item"; they can be classic <li> elements
-or generic <div> elements and they can contain anything: text, images, ... -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/fashion-beyond-ucla-guide-to-postgrad-style/"><img src="./assets/img/articlephotos/web.a&e.fashionbeyond.picB.MB.jpg" class="tt" title="This is my image's tooltip message!" /></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/graduate-student-rocco-pucillo-sells-imaginary-foe-to-warner-bros/"><img src="./assets/img/articlephotos/web.a&e.pucillo.CF.jpg" class="tt" title="This is my image's tooltip message!"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/qa-musician-naomi-robin-shares-postgrad-plans/"><img src="./assets/img/articlephotos/web.a&e.naoimirobin.picA.JU.jpg" /></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/graduate-student-raps-on-current-events-philosophy/"><img src="./assets/img/articlephotos/web.a&e.femi.GC.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/bruin-pursues-music-dance-curriculum-with-fulbright-program/"><img src="./assets/img/articlephotos/web.a&e.guerra.JL.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/donald-neuen-retires-after-50-years-of-collegiate-conducting/"><img src="./assets/img/articlephotos/web.a&e.donaldnuen.JZ.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/screenwriting-student-commissioned-to-write-comedy-pilot/"><img src="./assets/img/articlephotos/web.a&e.marye.AY.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/acting-scriptwriting-on-the-horizon-for-ucla-student/"><img src="./assets/img/articlephotos/web.a&e.kimia.AYeo.jpg"/></a></li> <!-- image -->
-
-    </ul> <!-- als-wrapper end -->
-  </div> <!-- als-viewport end -->
-  <span class="als-next"><img src="./assets/img/next.png" alt="next" title="next" /></span> <!-- "next" button -->
-</div> <!-- als-container end -->
-  </div>
 
 <div class="section" id="video">
-    <div class="category">Video</div>
-    <h3 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+    <div class="category" style="color: black">Multimedia</div>
+    <h3 class="title"></h3>
     <!-- define a container with class "als-container": this will be the object binded to ALS; we suggest to give it an ID
 to retrieve it easily during ALS inizialization -->
 
@@ -322,61 +282,27 @@ it can be a classic <ul> element or even a <div> element -->
 
 <!-- define the list elements, each must have class "als-item"; they can be classic <li> elements
 or generic <div> elements and they can contain anything: text, images, ... -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/fashion-beyond-ucla-guide-to-postgrad-style/"><img src="./assets/img/articlephotos/web.a&e.fashionbeyond.picB.MB.jpg" class="tt" title="This is my image's tooltip message!" /></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/graduate-student-rocco-pucillo-sells-imaginary-foe-to-warner-bros/"><img src="./assets/img/articlephotos/web.a&e.pucillo.CF.jpg" class="tt" title="This is my image's tooltip message!"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/qa-musician-naomi-robin-shares-postgrad-plans/"><img src="./assets/img/articlephotos/web.a&e.naoimirobin.picA.JU.jpg" /></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/graduate-student-raps-on-current-events-philosophy/"><img src="./assets/img/articlephotos/web.a&e.femi.GC.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/bruin-pursues-music-dance-curriculum-with-fulbright-program/"><img src="./assets/img/articlephotos/web.a&e.guerra.JL.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/donald-neuen-retires-after-50-years-of-collegiate-conducting/"><img src="./assets/img/articlephotos/web.a&e.donaldnuen.JZ.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/screenwriting-student-commissioned-to-write-comedy-pilot/"><img src="./assets/img/articlephotos/web.a&e.marye.AY.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/acting-scriptwriting-on-the-horizon-for-ucla-student/"><img src="./assets/img/articlephotos/web.a&e.kimia.AYeo.jpg"/></a></li> <!-- image -->
+
+      <li class="als-item">
+        <a target="_blank" href="http://dailybruin.com/2014/06/09/maxlove-project-pillow-company-help-kids-cope-with-cancer-treatment-2/">
+        <img src="./assets/img/articlephotos/web.ns.6.9.maxlove.jpg" class="tt" title="MaxLove Project, pillow company help kids cope with cancer treatment" /></a>
+      </li> <!-- image -->
+      <li class="als-item">
+        <a target="_blank" href="http://dailybruin.com/2014/06/09/bruin-motorcycle-association-builds-bonds-through-bikes/">
+        <img src="./assets/img/articlephotos/web.videoreefer.motorcycle.courtesy.jpg" class="tt" title="Bruin Motorcycle Association builds bonds through bikes"/></a>
+      </li> <!-- image -->
+      <li class="als-item"><a target="_blank" href="http://dailybruin.com/2014/06/09/songs-stories-276-bring-back-our-girls-by-femi/"><img src="./assets/img/articlephotos/web.a&e.femi.GC.jpg" class="tt" title="Songs & Stories: ’276 (Bring Back Our Girls)’ by Femi"/></a></li> <!-- image -->
+      <li class="als-item">
+      <a target="_blank" href="http://dailybruin.com/2014/06/09/students-agree-psychology-is-more-than-study-of-mind-behavior">
+      <img src="./assets/img/articlephotos/6.9.142-150x150" class="tt" title="Students agree: Psychology is more than study of mind, behavior"/></a>
+      </li> <!-- image -->
+
 
     </ul> <!-- als-wrapper end -->
   </div> <!-- als-viewport end -->
   <span class="als-next"><img src="./assets/img/next.png" alt="next" title="next" /></span> <!-- "next" button -->
 </div> <!-- als-container end -->
   </div>
-
-
-<div class="section" id="prime">
-    <div class="category">Prime</div>
-    <h3 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-    <!-- define a container with class "als-container": this will be the object binded to ALS; we suggest to give it an ID
-to retrieve it easily during ALS inizialization -->
-
-<div class="als-container" id="demo7">
-
-<!-- if you choose manual scrolling (which is set by default), insert <span> with class "als-prev"  and "als-next":
-they define the buttons "previous" and "next"; within the <span> you can use images or simple text -->
-
-  <span class="als-prev"><img src="./assets/img/prev.png" alt="prev" title="previous" /></span>
-
-<!-- define a container with class "als-viewport": this will be the viewport for the list visible elements -->
-
-  <div class="als-viewport">
-
-<!-- define a container with class "als-wrapper": this will be the wrapper for the list elements,
-it can be a classic <ul> element or even a <div> element -->
-
-    <ul class="als-wrapper">
-
-<!-- define the list elements, each must have class "als-item"; they can be classic <li> elements
-or generic <div> elements and they can contain anything: text, images, ... -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/fashion-beyond-ucla-guide-to-postgrad-style/"><img src="./assets/img/articlephotos/web.a&e.fashionbeyond.picB.MB.jpg" class="tt" title="This is my image's tooltip message!" /></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/graduate-student-rocco-pucillo-sells-imaginary-foe-to-warner-bros/"><img src="./assets/img/articlephotos/web.a&e.pucillo.CF.jpg" class="tt" title="This is my image's tooltip message!"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/qa-musician-naomi-robin-shares-postgrad-plans/"><img src="./assets/img/articlephotos/web.a&e.naoimirobin.picA.JU.jpg" /></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/graduate-student-raps-on-current-events-philosophy/"><img src="./assets/img/articlephotos/web.a&e.femi.GC.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/bruin-pursues-music-dance-curriculum-with-fulbright-program/"><img src="./assets/img/articlephotos/web.a&e.guerra.JL.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/donald-neuen-retires-after-50-years-of-collegiate-conducting/"><img src="./assets/img/articlephotos/web.a&e.donaldnuen.JZ.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/screenwriting-student-commissioned-to-write-comedy-pilot/"><img src="./assets/img/articlephotos/web.a&e.marye.AY.jpg"/></a></li> <!-- image -->
-      <li class="als-item"><a href="http://dailybruin.com/2014/06/09/acting-scriptwriting-on-the-horizon-for-ucla-student/"><img src="./assets/img/articlephotos/web.a&e.kimia.AYeo.jpg"/></a></li> <!-- image -->
-
-    </ul> <!-- als-wrapper end -->
-  </div> <!-- als-viewport end -->
-  <span class="als-next"><img src="./assets/img/next.png" alt="next" title="next" /></span> <!-- "next" button -->
-</div> <!-- als-container end -->
-  </div>
-
 
 
 
@@ -394,10 +320,10 @@ or generic <div> elements and they can contain anything: text, images, ... -->
 	$(document).ready(function(){
 		$('.tt').tipsy({gravity: 's'});
     $("#demo1, #demo2, #demo3, #demo4, #demo5, #demo6, #demo7").als({
-		visible_items:6,
-		scrolling_items: 2,
+		visible_items: 6,
+		scrolling_items: 3,
 		orientation: "horizontal",
-		circular: "yes",
+		circular: "no",
 		autoscroll: "no"
 	  });
 	});
