@@ -14,35 +14,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body, html {
@@ -119,49 +119,78 @@ h1 {
 /*****************************************************
  * generic styling for ALS elements: outer container
  ******************************************************/
-#demo1{
-	margin: 40px auto;
+#demo1, #demo2{
+  margin: 40px auto;
 }
 
-#demo1 .als-item{
-	margin: 0px 5px;
-	padding: 4px 0px;
-	max-height: 120px;
-	min-width: 100px;
-	text-align: center;
+#demo1 .als-item, #demo2 .als-item, #demo3 .als-item, #demo4 .als-item, #demo5 .als-item{
+  margin: 0px 5px;
+  padding: 4px 0px;
+  min-height: 120px;
+  min-width: 100px;
+  text-align: center;
 }
-#demo1 .als-item img{
-	display:block;
-	margin: 0 auto;
-	vertical-align: middle;
+#demo1 .als-item img, #demo2 .als-item img{
+  display:block;
+  margin: 0 auto;
+  vertical-align: middle;
 }
 
-#demo1 .als-prev, #demo1 .als-next{
-	top: 40px;
+#demo1 .als-prev, #demo1 .als-next, #demo2 .als-prev, #demo2 .als-next{
+  top: 40px;
 }
-#demo1 .als-prev{
+#demo1 .als-prev, #demo2 .als-prev{
+	top: 40px;  
 	left: 2px;
 }
-#demo1 .als-next{
-	left:1600px;
-	
+#demo1 .als-next, #demo2 .als-next{
+  	right:40px;
+	top: 40px;
+
 }
 
 .als-container {
-	position: relative;
-	width: 100%;
-	margin: 0px auto;
-	z-index: 0;
+  position: relative;
+  background-color: rgba(0,0,0,0.5);
+  padding: 30px;
+  width: 100%;
+  margin: 0px auto;
 }
+/****************************************
+ * navbar styling
+ ***************************************/
 
+.navbar-brand {
+  font-family: 'Roboto Slab', serif;
+  color: #0060A0 !important;
+  padding: 7px 8px !important;
+}
+.page-link {
+  font-family: 'Lato', serif;
+}
+.navbar {
+  min-height:30px !important;
+}
+.navbar .nav > li > a {
+  color:#333333;
+  padding-top:7px !important;
+  padding-bottom:7px !important;
+}
+.navbar .nav > li > a:hover {
+  color:#0060A0;
+}
+.navbar-default {
+  background-color: rgba(255,255,255,0.5);
+}
+.navbar-fixed-top {height:35px}
 /****************************************
  * viewport styling
  ***************************************/
 
 .als-viewport {
-	position: relative;
-	overflow: hidden;
-	margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
 }
 
 /***************************************************
@@ -169,9 +198,9 @@ h1 {
  **************************************************/
 
 .als-wrapper {
-	position: relative;
-	/* if you are using a list with <ul> <li> */
-	list-style: none;
+  position: relative;
+  /* if you are using a list with <ul> <li> */
+  list-style: none;
 }
 
 /*************************************
@@ -179,21 +208,28 @@ h1 {
  ************************************/
 
 .als-item {
-	position:relative;
-	display:block;
-	cursor:pointer;
-	float:left;
-	text-align: center;
+  position:relative;
+  display:block;
+  cursor:pointer;
+  float:left;
+  text-align: center;
+}
+
+.als-item img {
+  height: 150px;
+  width: 150px;
 }
 
 /***********************************************
  * prev, next: buttons styling
  **********************************************/
- 
+
 .als-prev, .als-next {
-	position: absolute;
-	cursor: pointer;
-	clear: both;
+  position: absolute;
+  cursor: pointer;
+  width: auto;
+  clear: both;
+  z-index: 10;
 }
 
 
@@ -204,4 +240,22 @@ h1 {
 
 #news {
   background-image: url('../img/example1.jpg');
+}
+
+/* ---- media queries */
+
+@media screen and (max-width: 750px) {
+
+  .nav-pills>li {
+      float: none;
+    }
+  .navbar-fixed-top {
+    position: relative !important;
+  }
+
+.navbar-fixed-top {
+height: auto !important;
+overflow: visible !important;
+}
+
 }

@@ -119,31 +119,33 @@ h1 {
 /*****************************************************
  * generic styling for ALS elements: outer container
  ******************************************************/
-#demo1{
+#demo1, #demo2, #demo3, #demo4, #demo5, #demo6, #demo7{
   margin: 40px auto;
 }
 
-#demo1 .als-item{
+#demo1 .als-item, #demo2 .als-item, #demo3 .als-item, #demo4 .als-item, #demo5 .als-item, #demo6 .als-item, #demo7 .als-item{
   margin: 0px 5px;
   padding: 4px 0px;
   min-height: 120px;
   min-width: 100px;
   text-align: center;
 }
-#demo1 .als-item img{
+#demo1 .als-item img, #demo2 .als-item img, #demo3 .als-item img, #demo4 .als-item img, #demo5 .als-item img, #demo6 .als-item img, #demo7 .als-item img{
   display:block;
   margin: 0 auto;
   vertical-align: middle;
 }
 
-#demo1 .als-prev, #demo1 .als-next{
+#demo1 .als-prev, #demo2 .als-next, #demo3 .als-prev, #demo4 .als-next, #demo5 .als-next, #demo6 .als-prev, #demo7 .als-next{
   top: 40px;
 }
-#demo1 .als-prev{
-  left: 2px;
+#demo1 .als-prev, #demo2 .als-prev,#demo3 .als-prev, #demo4 .als-prev, #demo5 .als-prev, #demo6 .als-prev, #demo7 .als-prev{
+	top: 40px;  
+	left: 2px;
 }
-#demo1 .als-next{
-  right:40px;
+#demo1 .als-next, #demo2 .als-next,#demo3 .als-next, #demo4 .als-next,#demo5 .als-next, #demo6 .als-next, #demo7 .als-next{
+  	right:40px;
+	top: 40px;
 
 }
 
