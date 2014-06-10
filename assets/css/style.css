@@ -438,6 +438,8 @@ overflow: visible !important;
   font-size: 1.5em;
   font-family: 'Roboto Slab', serif;
   color: #34495e;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 #opinion .thumb {
@@ -450,6 +452,21 @@ overflow: visible !important;
   opacity: 1;
 }
 
+#opinion .modal-header {
+  display: inline-block;
+  width: 100%;
+}
+
+#opinion .modal-mug-title {
+}
+
+#opinion .modal-thumb {
+  opacity: 1;
+  float: left;
+  display: inline-block;
+  width: 100px;
+  margin: 5px 0 5px 15px;
+}
 .video-container {
     position: relative;
     padding-bottom: 56.25%;

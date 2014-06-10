@@ -1,20 +1,19 @@
-$(document).ready(function(){
-  
-  $('.article').hide();
-  
+$(document).ready(function(){  
   $(function(){
     // Bind the event.
     $(window).hashchange( function(){
       // Alerts every time the hash changes!
-      console.log( location.hash );
-      
-      if (location.hash == "") {
-        $('.article').hide();
-        $('#descriptor').show();
-      } else {
-        $('#descriptor').hide();
-        $('.article').hide();
-        $(location.hash).show();
+      hash = location.hash;
+      if (hash in names)
+      {
+        //console.log(names);
+        $("html, body").scrollTop($("#opinion").offset().top);        
+        console.log(hash + ' is in names');
+        $(".modal").modal('hide');
+        $( hash ).modal('show');  
+      }
+      else {
+        console.log(hash + 'is not a name');
       }
     });
 
