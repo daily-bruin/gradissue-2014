@@ -379,6 +379,8 @@ or generic <div> elements and they can contain anything: text, images, ... -->
     names[ "#{{ post.name }}" ] = 1;
   {% endfor %}
   console.log(names);
+  var hashChangeIgnore = false;
+
 </script>
 
 
@@ -413,5 +415,13 @@ or generic <div> elements and they can contain anything: text, images, ... -->
   ga('send', 'pageview');
 
 </script>
-
+<script>
+  $("#opinion .thumb").click(function(){
+    var pathnameArray = this.src.split("/");
+    var nameOfFile = pathnameArray[pathnameArray.length -1];
+    var firstName = nameOfFile.split(".")[0];
+    location.href = "#" + firstName;
+    hashChangeIgnore = true;
+  });
+</script>
 </html>
