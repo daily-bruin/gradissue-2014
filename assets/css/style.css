@@ -439,7 +439,8 @@ overflow: visible !important;
   font-family: 'Roboto Slab', serif;
   color: #34495e;
   vertical-align: middle;
-  display: inline-block;
+  display: table-cell;
+  width: 100%;
 }
 
 #opinion .thumb {
@@ -458,6 +459,7 @@ overflow: visible !important;
 }
 
 #opinion .modal-mug-title {
+  display: table;
 }
 
 #opinion .modal-thumb {
