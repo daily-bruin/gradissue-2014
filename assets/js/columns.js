@@ -8,12 +8,12 @@ $(document).ready(function(){
       {
         //console.log(names);
         $("html, body").scrollTop($("#opinion").offset().top);        
-        console.log(hash + ' is in names');
+        // console.log(hash + ' is in names');
         $(".modal").modal('hide');
         $( hash ).modal('show');  
       }
       else {
-        console.log(hash + 'is not a name');
+        // console.log(hash + 'is not a name');
       }
     });
 
